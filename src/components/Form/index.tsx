@@ -10,10 +10,9 @@ const Form = ({}) => {
   const onSubmit = (e: any) => {
     e.preventDefault();
     getForecast(location, setLoading);
-    console.log(location);
   };
 
-  if (loading) return <p>Loading</p>;
+  if (loading) return <p>Loading weather...</p>;
 
   return (
     <form>

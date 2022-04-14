@@ -10,8 +10,6 @@ const Forecast = async (location: String, setLoading: any) => {
     const response = await fetch(`${REQUEST_URL}/search/?query=${location}`);
     const data = await response.json();
 
-    console.log(data);
-
     const weather = await fetch(`${REQUEST_URL}/${data[0].woeid}/`);
     const weatherData = await weather.json();
     console.log(weatherData);
