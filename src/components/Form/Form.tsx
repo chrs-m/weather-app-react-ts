@@ -1,15 +1,19 @@
-import React, { useState } from "react";
+import React, { Dispatch, SetStateAction, useState } from "react";
 import PropTypes from "prop-types";
 import styles from "./Form.module.css";
-import getForecast from "../../hooks/Forecast";
+import getForecast from "../../hooks/getForecast";
 
-const Form = ({}) => {
+interface props {
+  setData: (value: object) => void;
+}
+
+const Form = ({ setData }: props) => {
   const [location, setLocation] = useState("");
   const [loading, setLoading] = useState(false);
 
-  const onSubmit = (e: any) => {
+  const onSubmit = async (e: any) => {
     e.preventDefault();
-    getForecast(location, setLoading);
+    setData(await getForecast(location, setLoading));
   };
 
   if (loading) return <p>Loading weather...</p>;

@@ -10,11 +10,23 @@ const Forecast = async (location: String, setLoading: any) => {
     const response = await fetch(`${REQUEST_URL}/search/?query=${location}`);
     const data = await response.json();
 
+    if (data.length < 1) {
+      console.log("city not found");
+
+      return null;
+    }
+
     const weather = await fetch(`${REQUEST_URL}/${data[0].woeid}/`);
     const weatherData = await weather.json();
+
+    if (weatherData.detail === "Not found.") {
+      console.log("something went wrong");
+      return null;
+    }
+
     console.log(weatherData);
 
-    return data;
+    return weatherData;
   } catch (error) {
     return error;
   } finally {
