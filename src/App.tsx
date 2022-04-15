@@ -11,6 +11,7 @@ function App() {
 
   return (
     <div className="App">
+      <h1>Search && Get your weather</h1>
       {error && <p>{error}</p>}
       {loading && <p>Loading weather...</p>}
       {!error && !loading && (

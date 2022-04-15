@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
 import WeatherDataObject from "../../Types/WeatherDataObject";
 
 interface props {
@@ -7,7 +6,11 @@ interface props {
 }
 
 const UpcomingDaysWeather = ({ weatherData }: props) => {
-  return <div></div>;
+  return (
+    <div>
+      <h2>Upcoming days</h2>
+    </div>
+  );
 };
 
 export default UpcomingDaysWeather;

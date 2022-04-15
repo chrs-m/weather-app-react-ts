@@ -5,3 +5,14 @@
   justify-content: center;
   align-items: center;
 }
+
+h1 {
+  font-size: 4rem;
+  background: -webkit-linear-gradient(
+    rgba(85, 227, 255, 1),
+    rgba(103, 73, 252, 1)
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 4rem;
+}
