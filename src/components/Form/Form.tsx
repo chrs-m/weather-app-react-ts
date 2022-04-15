@@ -1,5 +1,4 @@
 import React, { Dispatch, SetStateAction, useState } from "react";
-import PropTypes from "prop-types";
 import styles from "./Form.module.css";
 import getForecast from "../../hooks/getForecast";
 

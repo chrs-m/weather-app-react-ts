@@ -1,8 +1,8 @@
 import React from "react";
-import PropTypes from "prop-types";
 import TodaysWeather from "../TodaysWeather/TodaysWeather";
 import UpcomingDaysWeather from "../UpcomingDaysWeather/UpcomingDaysWeather";
 import WeatherDataObject from "../../Types/WeatherDataObject";
+import styles from "./Forecast.module.css";
 
 interface props {
   weatherData: WeatherDataObject;
@@ -10,7 +10,7 @@ interface props {
 
 const Forecast = ({ weatherData }: props) => {
   return (
-    <div>
+    <div className={styles.container}>
       <TodaysWeather weatherData={weatherData} />
       <UpcomingDaysWeather weatherData={weatherData} />
     </div>

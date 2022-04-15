@@ -1,0 +1,11 @@
+.cityContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+.cityName {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-right: 1rem;
+}

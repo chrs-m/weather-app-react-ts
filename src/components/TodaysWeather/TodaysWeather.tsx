@@ -1,6 +1,6 @@
 import React from "react";
-import PropTypes from "prop-types";
 import WeatherDataObject from "../../Types/WeatherDataObject";
+import styles from "./TodaysWeather.module.css";
 
 interface props {
   weatherData: WeatherDataObject;
@@ -10,12 +10,26 @@ const TodaysWeather = ({ weatherData }: props) => {
   const weatherIcon = `https://www.metaweather.com/static/img/weather/${weatherData.consolidated_weather[0].weather_state_abbr}.svg`;
 
   return (
-    <div>
-      <p>{weatherData.title}</p>
+    <div className={styles.container}>
+      <div className={styles.cityContainer}>
+        <p className={styles.cityName}>{weatherData.title}</p>
+        <img src={weatherIcon} width="30" alt="Todays weather" />
+      </div>
+
       <p>
-        Todays temprature is: {weatherData.consolidated_weather[0].the_temp}
+        Todays temprature is{" "}
+        {Math.floor(weatherData.consolidated_weather[0].the_temp)}{" "}
+        {" °C, and a weather state of "}
+        {weatherData.consolidated_weather[0].weather_state_name.toLowerCase()}.
       </p>
-      <img src={weatherIcon} width="30" />
+      <p>
+        Todays lowest temprature is:{" "}
+        {Math.floor(weatherData.consolidated_weather[0].min_temp)} {" °C"}
+      </p>
+      <p>
+        Todays highest temprature is:{" "}
+        {Math.floor(weatherData.consolidated_weather[0].max_temp)} {" °C"}
+      </p>
     </div>
   );
 };
