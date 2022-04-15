@@ -9,3 +9,25 @@
   font-weight: bold;
   margin-right: 1rem;
 }
+
+.extraWeatherDataContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-color-darker);
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.extraWeatherDataContainer p {
+  margin: 0.25rem;
+  font-weight: lighter;
+}
+
+.todaysTemp {
+  margin-right: 2rem;
+}
+
+.tempAndData {
+  display: flex;
+  align-items: center;
+}
