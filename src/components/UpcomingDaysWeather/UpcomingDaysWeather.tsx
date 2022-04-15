@@ -1,7 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
+import WeatherDataObject from "../../Types/WeatherDataObject";
 
-const UpcomingDaysWeather = ({}) => {
+interface props {
+  weatherData: WeatherDataObject;
+}
+
+const UpcomingDaysWeather = ({ weatherData }: props) => {
   return <div></div>;
 };
 

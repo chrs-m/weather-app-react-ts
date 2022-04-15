@@ -5,18 +5,24 @@ import getForecast from "../../hooks/getForecast";
 
 interface props {
   setData: (value: object) => void;
+  setError: (value: String) => void;
+  setLoading: (value: boolean) => void;
 }
 
-const Form = ({ setData }: props) => {
+const Form = ({ setData, setLoading, setError }: props) => {
   const [location, setLocation] = useState("");
-  const [loading, setLoading] = useState(false);
 
   const onSubmit = async (e: any) => {
     e.preventDefault();
-    setData(await getForecast(location, setLoading));
-  };
+    const response = await getForecast(location, setLoading);
 
-  if (loading) return <p>Loading weather...</p>;
+    if (!response) {
+      setError("Something went wrong");
+      return;
+    }
+
+    setData(response);
+  };
 
   return (
     <form>

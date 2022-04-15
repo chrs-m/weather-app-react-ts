@@ -6,11 +6,24 @@ import Forecast from "./components/Forecast/Forecast";
 
 function App() {
   const [weather, setWeather] = useState<object | null>(null);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState<String | null>(null);
 
   return (
     <div className="App">
-      <Form setData={setWeather} />
-      {weather && <Forecast weatherData={weather} />}
+      {error && <p>{error}</p>}
+      {loading && <p>Loading weather...</p>}
+      {!error && !loading && (
+        <>
+          <Form
+            setData={setWeather}
+            setLoading={setLoading}
+            setError={setError}
+          />
+
+          {weather && <Forecast weatherData={weather} />}
+        </>
+      )}
     </div>
   );
 }

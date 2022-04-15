@@ -12,7 +12,7 @@ const Forecast = ({ weatherData }: props) => {
   return (
     <div>
       <TodaysWeather weatherData={weatherData} />
-      <UpcomingDaysWeather />
+      <UpcomingDaysWeather weatherData={weatherData} />
     </div>
   );
 };
