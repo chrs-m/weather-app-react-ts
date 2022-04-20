@@ -24,7 +24,7 @@ const Forecast = async (location: String, setLoading: any) => {
       return null;
     }
 
-    console.log(weatherData);
+    // console.log(weatherData);
 
     return weatherData;
   } catch (error) {

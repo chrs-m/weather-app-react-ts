@@ -12,9 +12,9 @@ const TodaysWeather = ({ weatherData }: props) => {
 
   const airPressure = `${weatherData.consolidated_weather[0].air_pressure} mbar`;
   const humidity = `${weatherData.consolidated_weather[0].humidity}%`;
-  const wind = `${
-    Math.floor(weatherData.consolidated_weather[0].wind_speed) * 1.6
-  } km/h | ${weatherData.consolidated_weather[0].wind_direction_compass}`;
+  const wind = `${Math.floor(
+    weatherData.consolidated_weather[0].wind_speed * 1.6
+  )} km/h | ${weatherData.consolidated_weather[0].wind_direction_compass}`;
   const weatherState = `${weatherData.consolidated_weather[0].weather_state_name}`;
 
   return (
