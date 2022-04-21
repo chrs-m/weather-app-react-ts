@@ -16,11 +16,14 @@ const Form = ({ setData, setLoading, setError }: props) => {
     const response = await getForecast(location, setLoading);
 
     if (!response) {
-      setError("Something went wrong");
+      setError("Something went wrong, please try again.");
       return;
     }
 
-    setData(response);
+    if (response) {
+      setData(response);
+      setError("");
+    }
   };
 
   return (

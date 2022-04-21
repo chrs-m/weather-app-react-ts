@@ -14,7 +14,7 @@ const Forecast = async (location: String, setLoading: any) => {
     const data = await response.json();
 
     if (data.length < 1) {
-      console.log("city not found");
+      console.log("City not found");
 
       return null;
     }
@@ -23,11 +23,9 @@ const Forecast = async (location: String, setLoading: any) => {
     const weatherData = await weather.json();
 
     if (weatherData.detail === "Not found.") {
-      console.log("something went wrong");
+      console.log("Something went wrong");
       return null;
     }
-
-    // console.log(weatherData);
 
     return weatherData;
   } catch (error) {

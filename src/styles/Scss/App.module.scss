@@ -1,3 +1,5 @@
+@import "./mixins.scss";
+
 .App {
   /* height: 100vh; */
   display: flex;
@@ -8,18 +10,24 @@
 
 h1 {
   font-size: 1.4rem;
-  background: -webkit-linear-gradient(rgb(85, 227, 255), rgb(103, 73, 252));
+  background: -webkit-linear-gradient(
+    rgba(85, 227, 255, 1),
+    rgba(103, 73, 252, 1)
+  );
   background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 4rem;
-}
-@media (min-width: 768px) {
-  h1 {
+
+  @include respond(md) {
     font-size: 2.2rem;
   }
-}
-@media (min-width: 1024px) {
-  h1 {
+  @include respond(lg) {
     font-size: 3.5rem;
   }
+}
+
+.errorMsg {
+  color: var(--text-color);
+  font-size: 1.4rem;
+  margin-bottom: 3rem;
 }
