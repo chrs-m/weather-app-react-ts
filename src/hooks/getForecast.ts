@@ -1,7 +1,10 @@
 import { useEffect, useState } from "react";
 
 const BASE_URL = "https://www.metaweather.com/api/location";
-const CROSS_DOMAIN = "https://the-ultimate-api-challenge.herokuapp.com";
+// const CROSS_DOMAIN = "https://the-ultimate-api-challenge.herokuapp.com";
+// const CROSS_DOMAIN = "http://ip-api.com/json";
+// const CROSS_DOMAIN = "https://thingproxy.freeboard.io/fetch";
+const CROSS_DOMAIN = "https://cors-anywhere.herokuapp.com";
 const REQUEST_URL = `${CROSS_DOMAIN}/${BASE_URL}`;
 
 const Forecast = async (location: String, setLoading: any) => {

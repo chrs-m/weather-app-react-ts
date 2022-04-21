@@ -1,0 +1,25 @@
+.App {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 1.4rem;
+  background: -webkit-linear-gradient(rgb(85, 227, 255), rgb(103, 73, 252));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 4rem;
+}
+@media (min-width: 768px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+}
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+}

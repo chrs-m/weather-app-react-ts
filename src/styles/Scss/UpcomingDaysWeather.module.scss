@@ -1,0 +1,11 @@
+@import "./mixins.scss";
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+}
