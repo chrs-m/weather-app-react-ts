@@ -2,10 +2,10 @@
 
 # A clean and simple weather app.
 
-## Just search for a city and get the forecast
+## Search for a city and get the forecast
 
 ```
-Made in React with TypeScript and SCSS.
+- Made in React with TypeScript and SCSS.
 
-Using MetaWeather API for weather data.
+- Using MetaWeather API for weather data.
 ```

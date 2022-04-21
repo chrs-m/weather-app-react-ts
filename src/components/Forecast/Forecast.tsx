@@ -1,7 +1,7 @@
 import React from "react";
 import TodaysWeather from "../TodaysWeather/TodaysWeather";
 import UpcomingDaysWeather from "../UpcomingDaysWeather/UpcomingDaysWeather";
-import WeatherDataObject from "../../types/WeatherDataObject";
+import WeatherDataObject from "../../Types/WeatherDataObject";
 import styles from "../../styles/Scss/Forecast.module.scss";
 
 interface props {

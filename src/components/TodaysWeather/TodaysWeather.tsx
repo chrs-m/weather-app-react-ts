@@ -1,5 +1,5 @@
 import React from "react";
-import WeatherDataObject from "../../types/WeatherDataObject";
+import WeatherDataObject from "../../Types/WeatherDataObject";
 import WeatherDataPoint from "../WeatherDataPoint/WeatherDataPoint";
 import styles from "../../styles/Scss/TodaysWeather.module.scss";
 
