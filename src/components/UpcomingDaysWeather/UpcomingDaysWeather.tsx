@@ -21,18 +21,15 @@ const UpcomingDaysWeather = ({ weatherData }: props) => {
   return (
     <div>
       <h2>Upcoming days</h2>
-      {weatherData.consolidated_weather
-        .slice(1)
-        .map((data: WeatherDataObject, index: number) => {
-          const date = new Date(data.applicable_date);
+      <div className={styles.wrapper}>
+        {weatherData.consolidated_weather
+          .slice(1)
+          .map((data: WeatherDataObject, index: number) => {
+            const date = new Date(data.applicable_date);
 
-          return (
-            <div key={index} className={styles.container}>
-              <div className={styles.wrapper}>
-                <div className={styles.dayDate}>
-                  <p className={styles.day}>{daysOfWeek[date.getDay()]}</p>
-                  {/* <p className={styles.date}>({data.applicable_date})</p> */}
-                </div>
+            return (
+              <div key={index} className={styles.container}>
+                <p className={styles.day}>{daysOfWeek[date.getDay()]}</p>
                 <div className={styles.tempImg}>
                   <p className={styles.temp}>{Math.floor(data.the_temp)} °C</p>
                   <img
@@ -43,9 +40,9 @@ const UpcomingDaysWeather = ({ weatherData }: props) => {
                   ></img>
                 </div>
               </div>
-            </div>
-          );
-        })}
+            );
+          })}
+      </div>
     </div>
   );
 };

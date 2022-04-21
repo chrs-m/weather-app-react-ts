@@ -32,4 +32,9 @@
 .tempAndData {
   display: flex;
   align-items: center;
+  font-size: 0.8rem;
+
+  @include respond(md) {
+    font-size: 1.2rem;
+  }
 }

@@ -1,11 +1,40 @@
 @import "./mixins.scss";
 
-.container {
-  display: flex;
-  flex-direction: row;
+h2 {
+  font-size: 1.1rem;
+
+  @include respond(md) {
+    font-size: 1.8rem;
+  }
 }
 
 .wrapper {
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
+  background-color: var(--bg-color-darker);
+  border-radius: 1rem;
+  padding: 1rem;
+  font-size: 0.8rem;
+  gap: 0.5rem;
+
+  @include respond(md) {
+    font-size: 1.2rem;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .day {
+      font-weight: bold;
+      margin-bottom: 0px;
+    }
+  }
+
+  .tempImg {
+    display: flex;
+    flex-direction: column;
+  }
 }
