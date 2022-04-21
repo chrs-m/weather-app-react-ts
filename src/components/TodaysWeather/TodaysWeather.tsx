@@ -30,11 +30,11 @@ const TodaysWeather = ({ weatherData }: props) => {
             {Math.floor(weatherData.consolidated_weather[0].the_temp)} {" °C"}
           </p>
           <p>
-            Todays lowest temprature is:{" "}
+            Todays lowest temprature is{" "}
             {Math.floor(weatherData.consolidated_weather[0].min_temp)} {" °C"}
           </p>
           <p>
-            Todays highest temprature is:{" "}
+            Todays highest temprature is{" "}
             {Math.floor(weatherData.consolidated_weather[0].max_temp)} {" °C"}
           </p>
         </div>

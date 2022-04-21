@@ -1,4 +1,4 @@
-import React, { Dispatch, SetStateAction, useState } from "react";
+import React, { useState } from "react";
 import styles from "../../styles/Scss/Form.module.scss";
 import getForecast from "../../hooks/getForecast";
 
@@ -29,7 +29,7 @@ const Form = ({ setData, setLoading, setError }: props) => {
         aria-label="location"
         type="text"
         className={`${styles.input} form-control`}
-        placeholder="Search location"
+        placeholder="Search city"
         required
         value={location}
         onChange={(e) => setLocation(e.target.value)}
