@@ -1,5 +1,5 @@
 import React from "react";
-import WeatherDataObject from "../../Types/WeatherDataObject";
+import WeatherDataObject from "../../types/WeatherDataObject";
 import styles from "../../styles/Scss/UpcomingDaysWeather.module.scss";
 
 interface props {

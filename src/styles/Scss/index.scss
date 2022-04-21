@@ -12,7 +12,7 @@
 
 body {
   height: 100vh;
-  font-family: "Rubik", sans-serif;
+  font-family: "Rubik", sans-serif !important;
   background-color: var(--bg-color);
   color: var(--main-text-color);
 }

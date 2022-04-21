@@ -1,7 +1,11 @@
 <img src="https://media.giphy.com/media/QRhtqYeEywJI4/giphy.gif" />
 
-# Simple but useful weather search.
+# A clean and simple weather app.
 
-This project is made in React with TypeScript.
+## Just search for a city and get the forecast
 
-Using Metaweather API for data.
+```
+Made in React with TypeScript and SCSS.
+
+Using MetaWeather API for weather data.
+```

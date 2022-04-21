@@ -1,5 +1,4 @@
 .App {
-  /* height: 100vh; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -22,6 +21,14 @@ h1 {
   h1 {
     font-size: 3.5rem;
   }
+}
+
+.darkModeContainer {
+  padding: 1rem;
+}
+.darkModeContainer .toggleText {
+  margin-bottom: 0;
+  font-size: 0.6rem;
 }
 
 .errorMsg {
