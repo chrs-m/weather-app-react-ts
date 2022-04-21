@@ -1,5 +1,5 @@
 import React, { Dispatch, SetStateAction, useState } from "react";
-import styles from "./Form.module.css";
+import styles from "./Form.module.scss";
 import getForecast from "../../hooks/getForecast";
 
 interface props {

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import "./App.css";
+import "./App.scss";
 import Form from "./components/Form/Form";
 import Forecast from "./components/Forecast/Forecast";
 

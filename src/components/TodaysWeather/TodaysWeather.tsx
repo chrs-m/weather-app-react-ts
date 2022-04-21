@@ -1,7 +1,7 @@
 import React from "react";
 import WeatherDataObject from "../../Types/WeatherDataObject";
 import WeatherDataPoint from "../WeatherDataPoint/WeatherDataPoint";
-import styles from "./TodaysWeather.module.css";
+import styles from "./TodaysWeather.module.scss";
 
 interface props {
   weatherData: WeatherDataObject;
