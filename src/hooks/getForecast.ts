@@ -1,8 +1,7 @@
 // Due to some cross domains die, I have a small list of different ones.
-// const CROSS_DOMAIN = "https://the-ultimate-api-challenge.herokuapp.com";
 // const CROSS_DOMAIN = "http://ip-api.com/json";
-// const CROSS_DOMAIN = "https://cors-anywhere.herokuapp.com";
-const CROSS_DOMAIN = "https://thingproxy.freeboard.io/fetch";
+const CROSS_DOMAIN = "https://cors-anywhere.herokuapp.com";
+// const CROSS_DOMAIN = "https://thingproxy.freeboard.io/fetch";
 
 const BASE_URL = "https://www.metaweather.com/api/location";
 
