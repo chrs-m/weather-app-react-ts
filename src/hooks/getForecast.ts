@@ -1,11 +1,16 @@
-// Due to some cross domains die, I have a small list of different ones.
+// Due to some cross domains stop working, I have a small list of different ones.
 // const CROSS_DOMAIN = "http://ip-api.com/json";
 // const CROSS_DOMAIN = "https://cors-anywhere.herokuapp.com";
-const CROSS_DOMAIN = "https://thingproxy.freeboard.io/fetch";
+// const CROSS_DOMAIN = "https://thingproxy.freeboard.io/fetch";
+// const CROSS_DOMAIN = "https://corsproxy.io/?";
 
-const BASE_URL = "https://www.metaweather.com/api/location";
+// const BASE_URL = "https://www.metaweather.com/api/location";
 
-const REQUEST_URL = `${CROSS_DOMAIN}/${BASE_URL}`;
+// const REQUEST_URL = `${CROSS_DOMAIN}/${BASE_URL}`;
+
+const REQUEST_URL =
+  "https://corsproxy.io/?" +
+  encodeURIComponent("https://www.metaweather.com/api/location");
 
 const Forecast = async (location: String, setLoading: any) => {
   try {
