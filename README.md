@@ -13,3 +13,5 @@
 If you don't get a reponse, try visit:
 [CORS anywhere](https://cors-anywhere.herokuapp.com/)
 and press the button to gain access.
+
+List of supported cities can be found [here](https://www.metaweather.com/).

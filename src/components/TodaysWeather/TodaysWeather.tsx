@@ -21,7 +21,12 @@ const TodaysWeather = ({ weatherData }: props) => {
     <div className={styles.container}>
       <div className={styles.cityContainer}>
         <p className={styles.cityName}>{weatherData.title}</p>
-        <img src={weatherIcon} width="30" alt="Todays weather" />
+        <img
+          src={weatherIcon}
+          width="30"
+          alt="Todays weather"
+          className={styles.weatherIcon}
+        />
       </div>
       <div className={styles.tempAndData}>
         <div className={styles.todaysTemp}>

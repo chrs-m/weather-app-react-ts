@@ -46,7 +46,7 @@ const successPalette = {
 const lightThemeOptions: ThemeOptions = {
   palette: {
     background: {
-      default: "#F5F6F7",
+      default: "#F5F5F5",
       paper: "#EBEDF0",
     },
     text: {
@@ -66,7 +66,7 @@ const lightThemeOptions: ThemeOptions = {
 const darkThemeOptions: ThemeOptions = {
   palette: {
     background: {
-      default: "#18191A",
+      default: "#2e3031",
       paper: "#242526",
     },
     text: {

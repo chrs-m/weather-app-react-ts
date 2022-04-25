@@ -7,15 +7,23 @@
 }
 
 .cityName {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: bold;
   margin-right: 1rem;
+
+  @include respond(md) {
+    font-size: 1.9rem;
+  }
+}
+
+.weatherIcon {
+  transform: translateY(4px);
 }
 
 .extraWeatherDataContainer {
   display: flex;
   flex-direction: column;
-  background-color: var(--bg-color-darker);
+  background-color: var(--bg-color-dark);
   padding: 1rem;
   border-radius: 1rem;
 }

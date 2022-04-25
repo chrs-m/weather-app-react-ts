@@ -19,7 +19,7 @@ function App() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<String | null>(null);
 
-  const [mode, setMode] = useState<PaletteMode>("dark");
+  const [mode, setMode] = useState<PaletteMode>("light");
 
   useEffect(() => {
     const storedTheme = getStoredTheme();

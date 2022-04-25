@@ -1,7 +1,8 @@
 .container {
-  background-color: var(--bg-color-dark);
+  background-color: var(--bg-color);
   padding: 1.5rem;
   border-radius: 2rem;
   color: var(--text-color);
   margin: 2rem;
+  box-shadow: 0 0 20px 0px rgb(137, 137, 137);
 }
