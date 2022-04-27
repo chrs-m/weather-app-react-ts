@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import styles from "../../styles/Scss/Form.module.scss";
-import getForecast from "../../hooks/getForecast";
+import styles from "../styles/Scss/Form.module.scss";
+import getForecast from "../hooks/getForecast";
 
 interface props {
   setData: (value: object) => void;
@@ -12,7 +12,15 @@ const Form = ({ setData, setLoading, setError }: props) => {
   const [location, setLocation] = useState("");
 
   const onSubmit = async (e: any) => {
+    setError("");
+
     e.preventDefault();
+
+    if (location.length <= 3) {
+      setError("Please enter a valid location");
+      return;
+    }
+
     const response = await getForecast(location, setLoading);
 
     if (!response) {

@@ -10,10 +10,10 @@ import {
 import { getStoredTheme, getThemeOptions, setStoredTheme } from "./utils/theme";
 
 import styles from "./styles/Scss/App.module.scss";
-import Form from "./components/Form/Form";
-import Forecast from "./components/Forecast/Forecast";
+import Form from "./components/Form";
+import Forecast from "./components/Forecast";
 import ThemeSwitch from "./components/ThemeSwitch";
-import Infobox from "./components/Infobox/Infobox";
+import Infobox from "./components/Infobox";
 
 function App() {
   const [weather, setWeather] = useState<object | null>(null);

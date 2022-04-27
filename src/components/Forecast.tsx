@@ -1,8 +1,8 @@
 import React from "react";
-import TodaysWeather from "../TodaysWeather/TodaysWeather";
-import UpcomingDaysWeather from "../UpcomingDaysWeather/UpcomingDaysWeather";
-import WeatherDataObject from "../../Types/WeatherDataObject";
-import styles from "../../styles/Scss/Forecast.module.scss";
+import TodaysWeather from "./TodaysWeather";
+import UpcomingDaysWeather from "./UpcomingDaysWeather";
+import WeatherDataObject from "../Types/WeatherDataObject";
+import styles from "../styles/Scss/Forecast.module.scss";
 
 interface props {
   weatherData: WeatherDataObject;

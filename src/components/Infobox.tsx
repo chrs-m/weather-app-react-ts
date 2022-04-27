@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../../styles/Scss/Infobox.module.scss";
+import styles from "../styles/Scss/Infobox.module.scss";
 
 type Props = {};
 
