@@ -11,11 +11,12 @@
 
 body {
   height: 100vh;
-  font-family: "Rubik", sans-serif !important;
+  font-family: "Space mono", sans-serif !important;
   background-color: var(--bg-color);
   color: var(--main-text-color);
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
 }

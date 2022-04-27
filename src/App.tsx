@@ -13,6 +13,7 @@ import styles from "./styles/Scss/App.module.scss";
 import Form from "./components/Form/Form";
 import Forecast from "./components/Forecast/Forecast";
 import ThemeSwitch from "./components/ThemeSwitch";
+import Infobox from "./components/Infobox/Infobox";
 
 function App() {
   const [weather, setWeather] = useState<object | null>(null);
@@ -45,6 +46,8 @@ function App() {
           }}
         />
       </div>
+
+      <Infobox />
 
       <div className={styles.App}>
         <h1>

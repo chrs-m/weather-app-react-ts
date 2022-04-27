@@ -7,7 +7,7 @@ form {
 .input {
   border-radius: var(--main-border-radius);
   margin-bottom: 1rem;
-  font-family: "Rubik";
+  font-family: "Space mono";
   font-size: 1.25rem;
   padding-left: 0.5rem;
   width: 200px;

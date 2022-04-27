@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css?family=Rubik:200,300,400,700,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Space+Mono:200,300,400,700,900&display=swap");
 
 :root {
-  --gradient: linear-gradient(135deg, #72edf2 10%, #9b51e5 100%);
+  --gradient: linear-gradient(135deg, #72edf2 10%, #7875eb 100%);
   --bg-color: #7db9ed;
   --bg-color-dark: #5a83a69b;
   --bg-color-darker: #192839;
@@ -12,12 +12,7 @@
 
 body {
   height: 100vh;
-  font-family: "Rubik", sans-serif !important;
+  font-family: "Space mono", sans-serif !important;
   background-color: var(--bg-color);
   color: var(--main-text-color);
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
 }
