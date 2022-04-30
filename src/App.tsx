@@ -14,6 +14,7 @@ import Form from "./components/Form";
 import Forecast from "./components/Forecast";
 import ThemeSwitch from "./components/ThemeSwitch";
 import Infobox from "./components/Infobox";
+import Loading from "./components/Loading";
 
 function App() {
   const [weather, setWeather] = useState<object | null>(null);
@@ -65,7 +66,7 @@ function App() {
             {weather && <Forecast weatherData={weather} />}
           </>
         )}
-        {loading && <p>Loading weather...</p>}
+        {loading && <Loading />}
         {!error && !loading && (
           <>
             <Form
